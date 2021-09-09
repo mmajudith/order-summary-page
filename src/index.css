@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "./font.css";
+@import "./styles/userProfile.css";
+@import "./styles/orderSum.css";
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+	list-style-type: none;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	background-color: hsl(270, 20%, 96%);
+	color: #000;
+}
+
+.app-container {
+	max-width: 1440px;
+	width: 100%;
+	height: 100%;
+	margin: auto auto;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: #0f1624;
+	color: hsl(204, 23.8%, 95.9%);
+}
+
+header ul {
+	width: 90%;
+	height: 100%;
+	margin: auto auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header ul li {
+	padding: 30px 0px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.loading {
+	font-size: 35px;
+	font-weight: 700;
+	color: #0f1624;
+	text-align: center;
+	line-height: 100px;
+}
+
+@media screen and (max-width: 375px) {
+	header ul li {
+		padding: 25px 0px;
+		font-size: 14px;
+		font-weight: 600;
+	}
 }
