@@ -1,7 +1,6 @@
 import React from 'react'
 
 function OrderSumPage({data}) {
-  console.log(data)
 
   //destructuring items, restuarant and user from data
   const {items, restaurant, user} = data
@@ -11,7 +10,7 @@ function OrderSumPage({data}) {
     <div className="order-sum-container">
       
       {
-        data.length === 0 ? <p className="loading">Loading...</p>:(
+        data.length === 0 ? <p className="loading">Loading...</p> : (
           <div className="wrapper">
             <div className="rest-wrapper">
               <h1>{restaurant.name}</h1>

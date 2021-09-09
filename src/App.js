@@ -43,16 +43,16 @@ function App() {
           <li>Home</li>
           <li>About</li>
           <li>Blog</li>
-          <li> <Link to="/userProfile" style={ userStyleProfile}>Visit user profile</Link></li>
+          <li> <Link to="/order-summary-page/userProfile" style={ userStyleProfile}>Visit user profile</Link></li>
         </ul>
       </header>
       
 
-      <Route exact path="/">
+      <Route exact path="/order-summary-page">
         <OrderSumPage data={data}/>
       </Route>
 
-      <Route exact path="/userProfile">
+      <Route exact path="/order-summary-page/userProfile">
         <CustomerProfile userData={data}/>
       </Route>
      
