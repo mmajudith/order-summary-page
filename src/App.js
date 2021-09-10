@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       <header>
         <ul>
-          <li>Home</li>
+          <li><Link to="/order-summary-page" style={{color: 'hsl(204, 23.8%, 95.9%)', textDecoration: 'none'}}> Home </Link></li>
           <li>About</li>
           <li>Blog</li>
           <li> <Link to="/order-summary-page/userProfile" style={ userStyleProfile}>Visit user profile</Link></li>
